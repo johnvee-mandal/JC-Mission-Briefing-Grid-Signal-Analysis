@@ -17,16 +17,16 @@ void analyzeWithForLoop() {
         }
 
 
-
     }
 
     void analyzeWithForEachLoop() {
         System.out.println("Analyzing with advanced for-each loop:");
         for (char[] row : scrambledGrid) {
+            System.out.println("Processing Row with Hash:  [C@" + row.hashCode());
             for (char cell : row) {
-                System.out.print(cell + " ");
+                System.out.println("—> "+  cell + " ");
             }
-            System.out.println();
+            
         }
     }
 void analyzeWithHybridLoop() {
